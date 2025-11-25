@@ -13,7 +13,7 @@ export const EXPERIENCE : Experiences[] = [
     org: "IDEMIA",
     title: "Software Engineer Intern",
     detail:
-      "Developing & Shipping internal IT Asset Management tools from development to production phase. Utilizes Laravel and Snipe-IT base open source to respond toward Stakeholder's requirements, with a touch of DevOps for product deployment and storage (Docker, NGINX, MinIO).",
+      "Developing & Shipping internal IT Asset Management tools from development to production phase. Utilizes Laravel and Snipe-IT base open source to respond toward Stakeholder's requirements, with a touch of DevOps for product deployment and automation.",
   },
 ];
 

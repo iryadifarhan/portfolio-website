@@ -17,6 +17,7 @@ export default function Hero({name, location, quick_blurb, recent_education_titl
             initial={{ borderRadius: 9999 }}
             animate={{ borderRadius: 150 }}
             whileHover={{ scale: 1.2  , rotate: 2, borderRadius: 16 }} // 16px ≈ rounded-2xl
+            whileTap={{ scale: 1.2  , rotate: 2, borderRadius: 16 }} // 16px ≈ rounded-2xl
             whileFocus={{ scale: 1.2  , rotate: 2, borderRadius: 16 }} // 16px ≈ rounded-2xl
             transition={{ type: "tween", duration: 0.2, ease: "easeIn" }}
             className="
