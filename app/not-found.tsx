@@ -1,5 +1,6 @@
 // app/not-found.tsx
 
+import { ArrowLeftIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -17,7 +18,8 @@ export default function NotFound() {
           href="/"
           className="inline-flex items-center gap-2 rounded-full border border-black/10 dark:border-white/20 px-4 py-2 text-sm md:text-base hover:bg-black/5 dark:hover:bg-white/10 transition-colors"
         >
-          ← Back to home
+          <ArrowLeftIcon className="h-4 w-4" aria-hidden />
+          Back to home
         </Link>
       </div>
     </section>

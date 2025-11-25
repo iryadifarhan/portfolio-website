@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Work } from "../../data/works";
+import { ArrowRightIcon } from "lucide-react";
 
 export default function RecentWorks({ works } : { works: Work[] }) {
   const recent = [...works]
@@ -17,7 +18,7 @@ export default function RecentWorks({ works } : { works: Work[] }) {
             className="inline-flex items-center gap-2 rounded-xl px-4 py-2 border border-black/10 dark:border-white/10 bg-foreground/5 hover:bg-foreground/10 transition whitespace-nowrap"
           >
             View all
-            <span className="hidden md:block" aria-hidden>→</span>
+            <ArrowRightIcon className="h-4 w-4" aria-hidden />
           </Link>
         </div>
 

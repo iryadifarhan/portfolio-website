@@ -1,6 +1,7 @@
 import Link from "next/link";
 import GallerySlider from "../GallerySlider";
 import { Work } from "../../data/works";
+import { ArrowLeftIcon } from "lucide-react";
 
 export function ProjectHeading( {work} : {work: Work} ) {
     // slideshow images: cover + optional gallery
@@ -15,7 +16,7 @@ export function ProjectHeading( {work} : {work: Work} ) {
                         rounded-lg border border-black/10 dark:border-white/10 px-3 py-1.5 text-xs lg:text-sm"
             aria-label="Back to all work"
             >
-            <span aria-hidden>←</span>
+            <ArrowLeftIcon className="h-4 w-4" aria-hidden />
             Back to all work
             </Link>
 

@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function QuickContact() {
@@ -27,7 +28,7 @@ export default function QuickContact() {
                          focus-visible:ring-2 focus-visible:ring-black/20
                          dark:focus-visible:ring-white/30 text-base font-medium"
             >
-              Get in touch <span className="font-bold">→</span>
+              Get in touch <ArrowRightIcon className="h-4 w-4" aria-hidden />
             </Link>
           </div>
         </div>
