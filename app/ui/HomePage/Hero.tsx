@@ -13,10 +13,11 @@ export default function Hero({name, location, quick_blurb, recent_education_titl
       <div className="w-full px-8 py-10 md:py-16">
         <div className="flex flex-col items-center gap-8 md:flex-row md:items-center md:gap-12">
           {/* Photo (left) */}
-          <motion.div
+          <motion.button
             initial={{ borderRadius: 9999 }}
             animate={{ borderRadius: 150 }}
             whileHover={{ scale: 1.2  , rotate: 2, borderRadius: 16 }} // 16px ≈ rounded-2xl
+            whileFocus={{ scale: 1.2  , rotate: 2, borderRadius: 16 }} // 16px ≈ rounded-2xl
             transition={{ type: "tween", duration: 0.2, ease: "easeIn" }}
             className="
               relative shrink-0 size-44 lg:size-52
@@ -32,10 +33,10 @@ export default function Hero({name, location, quick_blurb, recent_education_titl
               className="
                 object-cover
                 transition duration-500 ease-out
-                group-hover:saturate-100 group-hover:contrast-110
+                contrast-110
               "
             />
-          </motion.div>
+          </motion.button>
 
 
           {/* Text (right) */}
