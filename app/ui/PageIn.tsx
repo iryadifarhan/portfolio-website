@@ -17,7 +17,7 @@ export default function PageIn({ children }: { children: React.ReactNode }) {
   }, [pathname]);
 
   return (
-    <div ref={ref} className="animate-page-in w-[100%]">
+    <div ref={ref} className="animate-page-in w-[100%] max-w-[1024px]">
       {children}
     </div>
   );

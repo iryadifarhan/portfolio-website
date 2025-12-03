@@ -36,7 +36,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop: Links */}
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           {items.map((it) => (
             <NavLink onClick={() => setOpen(false)} key={it.href} target={it.href} text={it.label} className="text-lg tracking-tight font-medium transition-opacity duration-200 ease-out active:opacity-70 hover:opacity-80"/>
           ))}
@@ -53,7 +53,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile: Hamburger */}
-        <div className="md:hidden inline-flex items-center gap-2 pt-1">
+        <div className="lg:hidden inline-flex items-center gap-2 pt-1">
           <button
             onClick={() => setOpen(o => !o)}
             aria-expanded={open}
