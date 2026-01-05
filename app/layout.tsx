@@ -6,6 +6,7 @@ import Navbar from "./ui/Navbar";
 import Footer from "./ui/Footer";
 import PageIn from "./ui/PageIn";
 import ScrollToTop from "./ui/ScrollToTop";
+import AssetLoadGate from "./ui/AssetLoadGate";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,13 +34,15 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-          <main className="select-none font-sans flex flex-col items-center justify-items-center min-h-screen py-5 md:p-20 md:py-7">
-            <Navbar />
-              <PageIn>{children}</PageIn>
-            <Footer />
-          </main>
+          <AssetLoadGate>
+            <main className="select-none font-sans flex flex-col items-center justify-items-center min-h-screen py-5 md:p-20 md:py-7">
+              <Navbar />
+                <PageIn>{children}</PageIn>
+              <Footer />
+            </main>
 
-          <ScrollToTop />
+            <ScrollToTop />
+          </AssetLoadGate>
         </ThemeProvider>
       </body>
     </html>

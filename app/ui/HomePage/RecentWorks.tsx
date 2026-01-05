@@ -9,7 +9,7 @@ export default function RecentWorks({ works } : { works: Work[] }) {
     .slice(0, 2);
 
   return (
-    <section id="work" aria-label="Recent work" className="bg-background text-foreground w-full">
+    <section id="work" aria-label="Recent work" className="text-foreground w-full">
       <div className="px-8 py-15 md:py-20 border-t border-black/10 dark:border-white/10">
         <div className="mb-6 md:mb-8 flex items-center justify-between gap-4">
           <h2 className="text-2xl md:text-3xl font-semibold tracking-tight">My Recent Works</h2>

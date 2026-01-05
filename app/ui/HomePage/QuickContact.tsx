@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function QuickContact() {
 
   return (
-    <section id="contact" className="bg-background text-foreground w-full">
+    <section id="contact" className="text-foreground w-full">
       <div className="px-8 py-15 md:py-20 border-t border-black/10 dark:border-white/10">
         <div className="grid gap-8 lg:grid-cols-[minmax(14rem,22rem)_1fr] lg:gap-12 items-start">
           {/* Left label */}

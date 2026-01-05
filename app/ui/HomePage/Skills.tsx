@@ -68,7 +68,7 @@ export default function Skills() {
     <section
       id="skills"
       aria-label="Skills"
-      className="bg-background text-foreground md:w-[100%] border-t border-black/10 dark:border-white/10"
+      className="text-foreground md:w-[100%] border-t border-black/10 dark:border-white/10"
     >
       <div className="px-8 py-15 md:py-20 lg:flex lg:items-start lg:gap-12 border-t border-black/10 dark:border-white/10">
         {/* Left: intro (fixed-ish width) */}

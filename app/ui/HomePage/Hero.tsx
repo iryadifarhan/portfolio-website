@@ -7,7 +7,7 @@ export default function Hero({name, location, quick_blurb, recent_education_titl
   return (
     <section
       id="hero"
-      className="bg-background text-foreground"
+      className="text-foreground"
       aria-label="Intro"
     >
       <div className="w-full px-8 py-10 md:py-16">

@@ -20,7 +20,7 @@ const socials: Social[] = [
 
 export default function Footer() {
   return (
-    <footer className="w-[100%] border-t border-black/10 dark:border-white/10 bg-background text-foreground">
+    <footer className="w-[100%] border-t border-black/10 dark:border-white/10 text-foreground">
       <div className="p-8 flex flex-col items-center justify-center gap-4 md:flex-row md:items-center md:justify-between">
         <p className="text-sm md:text-base tracking-tight">
           © {new Date().getFullYear()} <NavLink className="font-semibold hover:underline" text={PERSONAL_DATA.nickname} target="/"/>. All rights reserved.
