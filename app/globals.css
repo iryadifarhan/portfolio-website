@@ -46,3 +46,28 @@ html { scrollbar-gutter: stable both-edges; }
   .animate-page-in { animation-duration: 1ms !important; }
 }
 
+/* Touch fallback: mirror common hover styles on tap */
+@media (hover: none) {
+  /* opacity hovers */
+  .hover\:opacity-80:active { opacity: .8; }
+  .hover\:opacity-90:active { opacity: .9; }
+  .hover\:opacity-70:active { opacity: .7; }
+
+  /* background hovers */
+  .hover\:bg-black\/5:active { background-color: rgba(0,0,0,.05); }
+  .hover\:bg-neutral-200\/30:active { background-color: rgba(229,229,229,.3); }
+  .dark .dark\:hover\:bg-white\/10:active { background-color: rgba(255,255,255,.1); }
+
+  /* shadow hovers (Tailwind shadow-md) */
+  .hover\:shadow-md:active {
+    box-shadow:
+      0 4px 6px -1px rgb(0 0 0 / 0.1),
+      0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  /* group-hover scale on tap (hamburger bars, etc.) */
+  .group:active .group-hover\:scale-110 { transform: scale(1.1); }
+  .group:active .group-hover\:scale-105 { transform: scale(1.05); }
+}
+
+

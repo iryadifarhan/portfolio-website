@@ -9,25 +9,22 @@ export function NavLink ({ className, text, target, onClick } : { className: str
     const pathname = usePathname();
     const router = useRouter();
 
+    const scrollTop = useCallback(() => {
+      onClick?.();
+      requestAnimationFrame(() => window.scrollTo({ top: 0, behavior: "smooth" }));
+    }, [onClick]);
+
     const handleClick: React.MouseEventHandler<HTMLAnchorElement> = (e) => {
       if (!onClick) return;
 
-      e.preventDefault(); 
-      onClick(); 
+      e.preventDefault();
+      scrollTop();
 
+      // Give the close animation a brief head-start before navigating.
       setTimeout(() => {
         router.push(target);
-        scrollTop();
-      }, 300); 
+      }, 180);
     };
-
-    const scrollTop = useCallback(() => {
-      onClick?.();
-      
-      requestAnimationFrame(() => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-    }, []);
     
     const link = pathname === target
     ? (

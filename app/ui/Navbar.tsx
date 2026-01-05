@@ -117,20 +117,14 @@ export default function Navbar() {
         {open && (
           <motion.div
             id="mobile-menu"
-            initial="closed"
-            animate="open"
-            exit="closed"
-            variants={{
-              open:   { height: 'auto', opacity: 1, pointerEvents: 'auto' },
-              closed: { height: 0,      opacity: 0, pointerEvents: 'none' },
-            }}
-            transition={{
-              height: { duration: 0.55, ease: [0.22, 1, 0.36, 1] },
-              opacity:{ duration: 0.3 }
-            }}
-            className="md:hidden absolute inset-x-0 top-full z-50 bg-background overflow-hidden"
+            initial={{ opacity: 0, y: -10, scaleY: 0.98, filter: "blur(2px)" }}
+            animate={{ opacity: 1, y: 0,  scaleY: 1,   filter: "blur(0px)" }}
+            exit={{ opacity: 0,  y: -8, scaleY: 0.98, filter: "blur(2px)" }}
+            transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
+            style={{ originY: 0 }}
+            className="lg:hidden absolute inset-x-0 top-full z-50 bg-background overflow-hidden"
           >
-            <div className="max-w-6xl mx-auto p-4 flex flex-col gap-2 drop-shadow-md/10 border border-b border-black/10 dark:border-white/10">
+            <div className="max-w-6xl mx-auto p-4 flex flex-col gap-2 drop-shadow-md/10 border border-black/10 dark:border-white/10 rounded-b-2xl">
               {items.map((it) => (
                 <NavLink onClick={() => setOpen(false)} key={it.href} target={it.href} text={it.label} className="text-left py-1 tracking-tight px-4 text-lg font-medium rounded-lg hover:bg-black/5 dark:hover:bg-white/10"/>
                 
