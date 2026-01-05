@@ -176,7 +176,9 @@ export default function Skills() {
                     className="object-contain h-20 w-20 select-none pointer-events-none
                                transition-all duration-300 ease-out
                                grayscale contrast-75 opacity-70
-                               group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100"
+                               group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+                               group-active:grayscale-0 group-active:opacity-100 group-active:contrast-100
+                               group-focus-visible:grayscale-0 group-focus-visible:opacity-100 group-focus-visible:contrast-100"
                   />
                 </motion.button>
               ))}
