@@ -31,8 +31,8 @@ export const WORKS: Work[] = [
     company: "IDEMIA",
     scope: "Web App",
     year: 2025,
-    period: "Feb - Present",
-    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "MinIO", "NGINX", "Docker", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp"],
+    period: "Feb 2025 - Feb 2026",
+    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "MinIO", "NGINX", "Docker", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Bash", "Linux"],
     role: ["Software Engineer", "Fullstack Developer", "Devops & Automation Engineer"],
     description: "This project is the core assignment of my year-long internship at IDEMIA, where I continued and enhanced the development of an internal Asset Management web application. The system is used company-wide to track inventory, monitor item availability, manage stock movements, maintain audit trails, and support operational workflows. Built on top of the open-source Snipe-IT platform, the project required extensive customization to meet specific requirements from stakeholders and product owners, delivering features and workflows uniquely tailored to IDEMIA’s operational needs.",
     contributions: [ 
@@ -49,7 +49,7 @@ export const WORKS: Work[] = [
         description: "I applied a deployment pipeline by building and managing <strong>Docker</strong> and <strong>Docker Compose</strong> environments, creating production-ready images for <strong>NGINX</strong> (Webserver and Reverse Proxy), <strong>MinIO</strong> (S3 Object Storage) and <strong>Laravel</strong> (PHP FPM). I utilized <strong>Harbor</strong> as the private registry for image versioning and reuse. To eliminate manual deployment steps, I developed a <strong>Jenkins</strong> continuous deployment pipeline that automates building, testing, versioning, pushing images, and deploying updates directly to both staging and production servers via <strong>SSH</strong>, which improves deployment reliability and developer efficiency."
       },
     ],
-    gallery: ["/works/gallery/asset-management/intro-to-smartops.png", "/works/gallery/asset-management/farhan-pra.gif"],
+    gallery: ["/works/gallery/asset-management/intro-to-smartops.png", "/works/gallery/asset-management/opening.gif", "/works/gallery/asset-management/farhan-pra.gif"],
   },
   {
     slug: "gleam-wheels-web-app",
@@ -71,6 +71,7 @@ export const WORKS: Work[] = [
         description: "I implemented the core functionality of the web app using <strong>HTML</strong> with <strong>React.js</strong> (<strong>TypeScript</strong>) & <strong>TailwindCSS</strong> library for the front-end and <strong>Laravel</strong> (<strong>PHP</strong>) for the back-end. I developed both the user interface and the business logic layer for booking core feature, then integrating them with a <strong>MySQL</strong> database."
       },
     ],
+    gallery: ["/works/gallery/gleam-wheels/1.png", "/works/gallery/gleam-wheels/2.png", "/works/gallery/gleam-wheels/3.png", "/works/gallery/gleam-wheels/4.png"],
     company: "BINUS University Project",
     gitHubLink: "https://github.com/iryadifarhan/gleam_wheels",
   },

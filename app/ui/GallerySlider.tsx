@@ -122,7 +122,7 @@ export default function GallerySlider({ images, title }: Props) {
               <img
               src={src}
               alt={images.length === 1 ? title : `${title} screenshot ${i + 1}`}
-              className="object-cover w-full h-full select-none"
+              className="object-contain w-full h-full select-none"
               draggable={false}
               />
             ) 
@@ -132,7 +132,7 @@ export default function GallerySlider({ images, title }: Props) {
               src={src}
               alt={images.length === 1 ? title : `${title} screenshot ${i + 1}`}
               fill
-              className="object-cover select-none"
+              className="object-contain select-none"
               sizes="(min-width: 1024px) 960px, 100vw"
               priority={i === 0}
               draggable={false}
@@ -181,13 +181,13 @@ export default function GallerySlider({ images, title }: Props) {
       {/* Dots */}
       {images.length > 1 && (
         <div className="absolute bottom-2 left-1/2 -translate-x-1/2">
-          <ul className="flex items-center gap-3">
+          <ul className="flex items-center gap-4">
             {images.map((_, i) => (
               <li key={i}>
                 <button
                   aria-label={`Go to slide ${i + 1}`}
                   onClick={() => scrollToIndex(i)}
-                  className={`h-3 w-3 cursor-pointer rounded-full transition border border-white/80
+                  className={`h-4 w-4 cursor-pointer rounded-full transition border border-white/80
                               ${i === idx ? "bg-black" : "bg-black/30 hover:bg-black/60"}`}
                 />
               </li>

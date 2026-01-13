@@ -50,6 +50,8 @@ export const SKILLS: Skill[] = [
   { name: "Jenkins",      src: "/tech/jenkins-logo.svg",      cat: "" },
   { name: "Figma",      src: "/tech/figma-logo.svg",      cat: "" },
   { name: "Livewire",      src: "/tech/livewire-logo.svg",      cat: "" },
+  { name: "Linux",      src: "/tech/linux-logo.svg",      cat: "" },
+  { name: "Bash",      src: "/tech/bash-logo.svg",      cat: "" },
   { name: "Android Studio",      src: "/tech/android-studio-logo.svg",      cat: "" },
   { name: "XML",      src: "/tech/xml-logo.svg",      cat: "" },
   { name: "Marp",      src: "/tech/marp.svg",      cat: "" },
