@@ -45,7 +45,9 @@ export function ProjectDetailCard( {work, skills}: {work: Work, skills: Skill[]}
                 {work.period && (
                   <div className="flex justify-between gap-4">
                     <dt className="text-foreground/60">Timeline</dt>
-                    <dd className="font-medium text-right">{work.year}, {work.period}</dd>
+                    {work.year > 0 ? 
+                    (<dd className="font-medium text-right">{work.year}, {work.period}</dd>) : 
+                    (<dd className="font-medium text-right">{work.period}</dd>)}
                   </div>
                 )}
                 {work.role.length > 0 && (
