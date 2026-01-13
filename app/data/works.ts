@@ -21,6 +21,7 @@ export type Work = {
   linkExternal?: string;
   gitHubLink?: string;
   cloudLink?: string;
+  longProject?: boolean;
 };
 
 export const WORKS: Work[] = [
@@ -30,7 +31,8 @@ export const WORKS: Work[] = [
     cover: "/works/asset-management-website.webp",
     company: "IDEMIA",
     scope: "Web App",
-    year: 0,
+    year: 2025,
+    longProject: true,
     period: "Feb 2025 - Feb 2026",
     tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "MinIO", "NGINX", "Docker", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Bash", "Linux"],
     role: ["Software Engineer", "Fullstack Developer", "Devops & Automation Engineer"],
