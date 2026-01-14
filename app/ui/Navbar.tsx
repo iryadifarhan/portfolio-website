@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="https://binusianorg-my.sharepoint.com/personal/farhan_iryadi_binus_ac_id/_layouts/15/guestaccess.aspx?share=EWdMVKgh3-lFizRDiWu1nPEBjAL9bz_vIn6tZLhAwa6Syg&e=NMfcZd"
+            href={PERSONAL_DATA.resume_url}
             target="_blank"
             className="inline-flex items-center gap-2 text-lg font-medium px-4 py-1.5 rounded-2xl shadow-sm border border-black/10 transition-opacity duration-200 ease-out focus:outline-2 focus:outline-offset-2 focus:outline active:opacity-70 dark:bg-neutral-200/20 active:shadow
                        hover:shadow-md hover:bg-black/5 dark:hover:bg-white/10 /* hover */"
