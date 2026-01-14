@@ -34,13 +34,13 @@ export const WORKS: Work[] = [
     year: 2025,
     longProject: true,
     period: "Feb 2025 - Feb 2026",
-    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "MinIO", "NGINX", "Docker", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Bash", "Linux"],
+    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "Bash", "Linux", "MinIO", "NGINX", "Docker", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Jira"],
     role: ["Software Engineer", "Fullstack Developer", "Devops & Automation Engineer"],
     description: "This project is the core assignment of my year-long internship at IDEMIA, where I continued and enhanced the development of an internal Asset Management web application. The system is used company-wide to track inventory, monitor item availability, manage stock movements, maintain audit trails, and support operational workflows. Built on top of the open-source Snipe-IT platform, the project required extensive customization to meet specific requirements from stakeholders and product owners, delivering features and workflows uniquely tailored to IDEMIA’s operational needs.",
     contributions: [ 
       { 
         title: "Software Engineering",
-        description: "As part of an Agile Scrum team, I contributed to the full development lifecycle of the project—from refining requirements to implementing features and deploying releases. I worked on code development, handled branch management using <strong>GitLab</strong> + <strong>GitFlow</strong>, documented technical guidelines using <strong>MkDocs</strong>, and created presentation-ready documentation with <strong>Marp</strong>. I also participated as a <strong>speaker</strong> in a dedicated event for Asset Management showcase, where I convey the product upgrades and innovations applied toward whole IDEMIA Jakarta for feedback and improvement."
+        description: "As part of an Agile Scrum team, I contributed to the full development lifecycle of the project—from refining requirements to implementing features and deploying releases using <strong>Scrum & Kanban</strong> method through <strong>Jira</strong>. I worked on code development, handled branch management using <strong>GitLab</strong> + <strong>GitFlow</strong>, documented technical guidelines using <strong>MkDocs</strong>, and created presentation-ready documentation with <strong>Marp</strong>. I also participated as a <strong>speaker</strong> in a dedicated event for Asset Management showcase, where I convey the product upgrades and innovations applied toward whole IDEMIA Jakarta for feedback and improvement."
       },
       { 
         title: "Fullstack Developing",
@@ -48,7 +48,7 @@ export const WORKS: Work[] = [
       },
       { 
         title: "Devops & Automation Engineering",
-        description: "I applied a deployment pipeline by building and managing <strong>Docker</strong> and <strong>Docker Compose</strong> environments, creating production-ready images for <strong>NGINX</strong> (Webserver and Reverse Proxy), <strong>MinIO</strong> (S3 Object Storage) and <strong>Laravel</strong> (PHP FPM). I utilized <strong>Harbor</strong> as the private registry for image versioning and reuse. To eliminate manual deployment steps, I developed a <strong>Jenkins</strong> continuous deployment pipeline that automates building, testing, versioning, pushing images, and deploying updates directly to both staging and production servers via <strong>SSH</strong>, which improves deployment reliability and developer efficiency."
+        description: "I applied a deployment pipeline by building and managing <strong>Docker</strong> and <strong>Docker Compose</strong> environments, creating production-ready images for <strong>NGINX</strong> (Webserver and Reverse Proxy), <strong>MinIO</strong> (S3 Object Storage) and <strong>Laravel</strong> (PHP FPM). I utilized <strong>Harbor</strong> as the private registry for image versioning and reuse. To eliminate manual deployment steps, I developed a <strong>Jenkins</strong> continuous deployment pipeline and <strong>Bash</strong> scripts that automates building, testing, versioning, pushing images, and deploying updates directly to both staging and production <strong>Linux</strong> servers via <strong>SSH</strong>, which improves deployment reliability and developer efficiency."
       },
     ],
     gallery: ["/works/gallery/asset-management/intro-to-smartops.png", "/works/gallery/asset-management/opening.mp4", "/works/gallery/asset-management/farhan-pra.mp4"],

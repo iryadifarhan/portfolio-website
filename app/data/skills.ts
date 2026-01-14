@@ -56,6 +56,7 @@ export const SKILLS: Skill[] = [
   { name: "XML",      src: "/tech/xml-logo.svg",      cat: "" },
   { name: "Marp",      src: "/tech/marp.svg",      cat: "" },
   { name: "MkDocs",      src: "/tech/mkdocs.png",      cat: "" },
+  { name: "Jira",      src: "/tech/jira-logo.svg",      cat: "" },
 ];
 
 export const TABS: { key: Category; label: string }[] = [
