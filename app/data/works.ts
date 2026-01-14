@@ -51,7 +51,7 @@ export const WORKS: Work[] = [
         description: "I applied a deployment pipeline by building and managing <strong>Docker</strong> and <strong>Docker Compose</strong> environments, creating production-ready images for <strong>NGINX</strong> (Webserver and Reverse Proxy), <strong>MinIO</strong> (S3 Object Storage) and <strong>Laravel</strong> (PHP FPM). I utilized <strong>Harbor</strong> as the private registry for image versioning and reuse. To eliminate manual deployment steps, I developed a <strong>Jenkins</strong> continuous deployment pipeline that automates building, testing, versioning, pushing images, and deploying updates directly to both staging and production servers via <strong>SSH</strong>, which improves deployment reliability and developer efficiency."
       },
     ],
-    gallery: ["/works/gallery/asset-management/intro-to-smartops.png", "/works/gallery/asset-management/opening.gif", "/works/gallery/asset-management/farhan-pra.gif"],
+    gallery: ["/works/gallery/asset-management/intro-to-smartops.png", "/works/gallery/asset-management/opening.mp4", "/works/gallery/asset-management/farhan-pra.mp4"],
   },
   {
     slug: "gleam-wheels-web-app",

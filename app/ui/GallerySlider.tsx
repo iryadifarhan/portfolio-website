@@ -117,14 +117,19 @@ export default function GallerySlider({ images, title }: Props) {
       >
         {images.map((src, i) => (
           <div key={`${src}-${i}`} className="relative min-w-full snap-center aspect-[16/9]">
-            {src.endsWith('.gif') ? 
+            {src.endsWith('.mp4') ? 
             (
-              <img
-              src={src}
-              alt={images.length === 1 ? title : `${title} screenshot ${i + 1}`}
-              className="object-contain w-full h-full select-none"
-              draggable={false}
-              />
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="none"
+                disablePictureInPicture
+                className="object-contain w-full h-full select-none pointer-events-none"
+              >
+              <source src={src} type="video/mp4" />
+              </video>
             ) 
             : 
             (
@@ -135,6 +140,7 @@ export default function GallerySlider({ images, title }: Props) {
               className="object-contain select-none"
               sizes="(min-width: 1024px) 960px, 100vw"
               priority={i === 0}
+              loading={i === 0 ? "eager" : "lazy"}
               draggable={false}
               />
             )

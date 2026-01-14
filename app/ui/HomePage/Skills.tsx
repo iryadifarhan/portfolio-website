@@ -173,6 +173,7 @@ export default function Skills() {
                     alt={s.name}
                     width={80}
                     height={80}
+                    loading="lazy"
                     className="object-contain h-20 w-20 select-none pointer-events-none
                                transition-all duration-300 ease-out
                                grayscale contrast-75 opacity-70

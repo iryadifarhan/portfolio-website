@@ -9,7 +9,7 @@ function TimelineItem(props: Experiences) {
       <span className="absolute left-0 top-1.5 size-2 rounded-full bg-foreground/60" />
       <div className="text-sm text-foreground/60">{props.period}</div>
       <div className="flex flex-row gap-3 md:gap-4 mt-2">
-        <Image src={props.image} alt={props.title} width={80} height={80} 
+        <Image src={props.image} alt={props.title} width={80} height={80} loading="lazy"
         className="relative flex shrink-0 object-contain rounded-full border border-black/10 size-14 md:size-16 bg-muted-background dark:bg-foreground"/>
         <div className="text">
           <div className="mt-0.5 font-medium">{props.org}</div>
