@@ -30,7 +30,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <NavLink onClick={() => setOpen(false)} target="/" text={PERSONAL_DATA.nickname} className="font-semibold tracking-tight text-2xl transition-opacity duration-200 ease-out active:opacity-70 hover:opacity-80"/>
 
-          <div className="hidden md:contents">
+          <div className="hidden lg:contents">
             <ThemeToggle size={9}/>
           </div>
         </div>
@@ -130,7 +130,7 @@ export default function Navbar() {
                 
               ))}
 
-              <div className="inline-flex md:contents items-center gap-2 mx-4">
+              <div className="inline-flex items-center gap-2 mx-4">
                 <a
                   href={PERSONAL_DATA.resume_url}
                   target="_blank"
