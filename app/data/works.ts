@@ -34,7 +34,7 @@ export const WORKS: Work[] = [
     year: 2025,
     longProject: true,
     period: "Feb 2025 - Feb 2026",
-    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "Bash", "Linux", "MinIO", "NGINX", "Docker", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Jira"],
+    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "Bash", "Linux", "MinIO", "NGINX", "Docker", "Docker Compose", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Jira"],
     role: ["Software Engineer", "Fullstack Developer", "Devops & Automation Engineer"],
     description: "This project is the core assignment of my year-long internship at IDEMIA, where I continued and enhanced the development of an internal Asset Management web application. The system is used company-wide to track inventory, monitor item availability, manage stock movements, maintain audit trails, and support operational workflows. Built on top of the open-source Snipe-IT platform, the project required extensive customization to meet specific requirements from stakeholders and product owners, delivering features and workflows uniquely tailored to IDEMIA’s operational needs.",
     contributions: [ 

@@ -40,6 +40,7 @@ export const SKILLS: Skill[] = [
   // Logo
   { name: "GitLab",     src: "/tech/gitlab-logo.svg",     cat: "" },
   { name: "Docker",     src: "/tech/docker-logo.svg",     cat: "" },
+  { name: "Docker Compose",     src: "/tech/docker-compose-logo.webp",     cat: "" },
   { name: "NGINX",      src: "/tech/nginx-logo.svg",      cat: "" },
   { name: "MinIO",      src: "/tech/minio-logo.svg",      cat: "" },
   { name: "Snipe-IT",   src: "/tech/snipe-it-logo.webp",   cat: "" },
