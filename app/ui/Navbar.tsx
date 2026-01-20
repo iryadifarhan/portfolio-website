@@ -1,6 +1,6 @@
 'use client'
-import React from "react";
-import { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { Download } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
@@ -22,9 +22,36 @@ const lineVariants = {
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const headerRef = useRef<HTMLElement | null>(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handlePointerDown = (event: MouseEvent | TouchEvent) => {
+      const target = event.target as Node | null;
+      if (!headerRef.current || !target) return;
+
+      if (!headerRef.current.contains(target)) {
+        setOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handlePointerDown);
+    document.addEventListener("touchstart", handlePointerDown);
+
+    return () => {
+      document.removeEventListener("mousedown", handlePointerDown);
+      document.removeEventListener("touchstart", handlePointerDown);
+    };
+  }, [open]);
 
   return (
-    <header className="sticky top-0 w-[100%] z-50 bg-background">
+    <header ref={headerRef} className="sticky top-0 w-[100%] z-50 bg-background">
       <nav className="px-8 h-16 flex items-center justify-between relative gap-4 border-b border-black/10 dark:border-white/10 py-10 pt-11">
         {/* Left: Brand */}
         <div className="flex items-center gap-3">

@@ -34,7 +34,7 @@ export const WORKS: Work[] = [
     year: 2025,
     longProject: true,
     period: "Feb 2025 - Feb 2026",
-    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "MySQL", "Bash", "Linux", "MinIO", "NGINX", "Docker", "Docker Compose", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Jira"],
+    tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "Postman", "MySQL", "Bash", "Linux", "MinIO", "NGINX", "Docker", "Docker Compose", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Jira"],
     role: ["Software Engineer", "Fullstack Developer", "Devops & Automation Engineer"],
     description: "This project is the core assignment of my year-long internship at IDEMIA, where I continued and enhanced the development of an internal Asset Management web application. The system is used company-wide to track inventory, monitor item availability, manage stock movements, maintain audit trails, and support operational workflows. Built on top of the open-source Snipe-IT platform, the project required extensive customization to meet specific requirements from stakeholders and product owners, delivering features and workflows uniquely tailored to IDEMIA’s operational needs.",
     contributions: [ 
@@ -85,7 +85,7 @@ export const WORKS: Work[] = [
     year: 2024,
     company: "Personal Project",
     period: "Aug - Sep",
-    tags: ["Kotlin", "Spring Boot", "Android Studio", "PostgreSQL", "Docker"],
+    tags: ["Kotlin", "Spring Boot", "Android Studio", "Postman", "PostgreSQL", "Docker"],
     role: ["Back-end Developer"],
     description: "This project was created as a personal exploration into backend development and RESTful API design. I built a functional backend system for 'Donasi Sampah', a platform that allows users to donate recyclable waste in exchange for promos or vouchers. The system handles user data, donation records, reward redemption, and provides a scalable service architecture suitable for integration with a mobile app or web client.",
     contributions: [ 

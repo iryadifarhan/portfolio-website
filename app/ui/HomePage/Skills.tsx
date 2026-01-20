@@ -9,6 +9,7 @@ import {
 
 export default function Skills() {
   const [tab, setTab] = useState<Category>("languages");
+  const [activeSkill, setActiveSkill] = useState<string | null>(null);
   const filtered = useMemo(() => SKILLS.filter((s) => s.cat === tab), [tab]);
 
   // Arrow-key navigation for the tablist
@@ -149,40 +150,50 @@ export default function Skills() {
               exit="exit"
               className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 lg:gap-8"
             >
-              {filtered.map((s) => (
-                <motion.button
-                  key={s.name}
-                  type="button"
-                  aria-label={s.name}
-                  variants={cardVariants}
-                  whileHover={
-                    { y: -4, scale: 1.03 }
-                  }
-                  whileTap={{ scale: 0.98 }}
-                  transition={{ type: "spring", stiffness: 420, damping: 30 }}
-                  className="cursor-pointer group relative inline-flex items-center justify-center rounded-xl
-                             bg-foreground/5 p-3 sm:p-4 border border-black/10 dark:border-white/10
-                             shadow-sm focus-visible:outline-none focus-visible:ring-2
-                             focus-visible:ring-black/20 dark:focus-visible:ring-white/30
-                             transition-transform duration-0 active:scale-95"
-                  title={s.name}
-                  style={{ willChange: "transform" }}
-                >
-                  <Image
-                    src={s.src}
-                    alt={s.name}
-                    width={80}
-                    height={80}
-                    loading="lazy"
-                    className="object-contain h-20 w-20 select-none pointer-events-none
-                               transition-all duration-300 ease-out
-                               grayscale contrast-75 opacity-70
-                               group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
-                               group-active:grayscale-0 group-active:opacity-100 group-active:contrast-100
-                               group-focus-visible:grayscale-0 group-focus-visible:opacity-100 group-focus-visible:contrast-100"
-                  />
-                </motion.button>
-              ))}
+              {filtered.map((s) => {
+                const isActive = activeSkill === s.name;
+                return (
+                  <motion.button
+                    key={s.name}
+                    type="button"
+                    aria-label={s.name}
+                    aria-pressed={isActive}
+                    variants={cardVariants}
+                    whileHover={
+                      { y: -4, scale: 1.03 }
+                    }
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ type: "spring", stiffness: 420, damping: 30 }}
+                    className="cursor-pointer group relative inline-flex items-center justify-center rounded-xl
+                               bg-foreground/5 p-3 sm:p-4 border border-black/10 dark:border-white/10
+                               shadow-sm focus-visible:outline-none focus-visible:ring-2
+                               focus-visible:ring-black/20 dark:focus-visible:ring-white/30
+                               transition-transform duration-0 active:scale-95"
+                    title={s.name}
+                    style={{ willChange: "transform" }}
+                    onClick={() =>
+                      setActiveSkill((prev) => (prev === s.name ? null : s.name))
+                    }
+                  >
+                    <Image
+                      src={s.src}
+                      alt={s.name}
+                      width={80}
+                      height={80}
+                      loading="lazy"
+                      className="object-contain h-20 w-20 select-none pointer-events-none
+                                 transition-all duration-300 ease-out
+                                 grayscale contrast-75 opacity-70
+                                 group-hover:grayscale-0 group-hover:opacity-100 group-hover:contrast-100
+                                 group-focus-visible:grayscale-0 group-focus-visible:opacity-100 group-focus-visible:contrast-100"
+                      style={{
+                        filter: isActive ? "none" : undefined,
+                        opacity: isActive ? 1 : undefined,
+                      }}
+                    />
+                  </motion.button>
+                );
+              })}
             </motion.div>
           </AnimatePresence>
         </div>

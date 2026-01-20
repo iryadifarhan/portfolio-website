@@ -44,6 +44,7 @@ export const SKILLS: Skill[] = [
   { name: "NGINX",      src: "/tech/nginx-logo.svg",      cat: "" },
   { name: "MinIO",      src: "/tech/minio-logo.svg",      cat: "" },
   { name: "Snipe-IT",   src: "/tech/snipe-it-logo.webp",   cat: "" },
+  { name: "Postman",      src: "/tech/postman-logo.svg",      cat: "" },
   { name: "MySQL",      src: "/tech/mysql-logo.svg",      cat: "" },
   { name: "PostgreSQL",      src: "/tech/postgresql-logo.svg",      cat: "" },
   { name: "TypeScript",      src: "/tech/typescript.svg",      cat: "" },
