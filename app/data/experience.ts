@@ -1,5 +1,6 @@
 export type Experiences = {
     period: string;
+    still_working?: boolean;
     image: string;
     org: string;
     title: string;
@@ -8,7 +9,8 @@ export type Experiences = {
 
 export const EXPERIENCE : Experiences[] = [
   {
-    period: "2025 - Present",
+    period: "2025 - 2026",
+    still_working: false,
     image: "/about/idemia.webp",
     org: "IDEMIA",
     title: "Software Engineer Intern",
