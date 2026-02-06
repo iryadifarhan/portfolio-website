@@ -35,8 +35,7 @@ export default function SmallGallery({ gallery }: { gallery: Snapshot[] }) {
               // Make the image fill the column width and keep natural height:
               sizes="(min-width: 640px) 33vw, 50vw"
               style={{ width: "100%", height: "auto" }}
-              // Use cover for the same feel as your sample; switch to `object-contain` if you hate any cropping
-              className="cursor-pointer w-full h-auto object-cover grayscale-30 opacity-80 transition-all duration-300 hover:grayscale-0 hover:opacity-90"
+              className="cursor-pointer w-full h-auto object-contain grayscale-30 opacity-80 transition-all duration-300 hover:grayscale-0 hover:opacity-90"
               loading="lazy"
             />
           </motion.div>
