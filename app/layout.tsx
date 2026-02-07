@@ -1,6 +1,8 @@
 import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import type { Metadata } from "next";
+import Script from "next/script";
 
 import Navbar from "./ui/Navbar";
 import Footer from "./ui/Footer";
@@ -18,9 +20,56 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "farhan's website",
-  description: "A Portfolio Website",
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://iryadifarhan.vercel.app";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Farhan Amanullah Iryadi | Portfolio",
+    template: "%s | Farhan Amanullah Iryadi",
+  },
+  description:
+    "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
+  keywords: [
+    "iryadifarhan",
+    "iryadi",
+    "Farhan Iryadi",
+    "Farhan Amanullah Iryadi",
+    "portfolio",
+    "web developer",
+    "software engineer",
+    "binus"
+  ],
+  authors: [{ name: "Farhan Amanullah Iryadi" }],
+  creator: "Farhan Amanullah Iryadi",
+  applicationName: "Farhan Amanullah Iryadi Portfolio Website",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Farhan Amanullah Iryadi | Portfolio",
+    description:
+      "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
+    url: "/",
+    siteName: "Farhan Amanullah Iryadi",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Farhan Amanullah Iryadi | Portfolio",
+    description:
+      "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +82,24 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
+        <Script
+          id="ld-json-person"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Farhan Amanullah Iryadi",
+              alternateName: [
+                "Iryadifarhan",
+                "Iryadi",
+                "Farhan Iryadi",
+              ],
+              url: siteUrl,
+            }),
+          }}
+        />
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <AssetLoadGate>
             <main className="select-none font-sans flex flex-col items-center justify-items-center min-h-screen py-5 md:p-20 md:py-7">
