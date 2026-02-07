@@ -35,7 +35,7 @@ export const WORKS: Work[] = [
     longProject: true,
     period: "Feb 2025 - Feb 2026",
     tags: ["Snipe-IT", "Laravel", "Livewire", "PHP", "HTML", "JavaScript", "JQuery", "Bootstrap", "Postman", "MySQL", "Bash", "Linux", "MinIO", "NGINX", "Docker", "Docker Compose", "Harbor", "Jenkins", "GitLab", "MkDocs", "Marp", "Jira"],
-    role: ["Software Engineer", "Fullstack Developer", "Devops & Automation Engineer"],
+    role: ["Software Engineer", "Fullstack Developer", "Devops Automation Engineer"],
     description: "This project is the core assignment of my year-long internship at IDEMIA, where I continued and enhanced the development of an internal Asset Management web application. The system is used company-wide to track inventory, monitor item availability, manage stock movements, maintain audit trails, and support operational workflows. Built on top of the open-source Snipe-IT platform, the project required extensive customization to meet specific requirements from stakeholders and product owners, delivering features and workflows uniquely tailored to IDEMIA’s operational needs.",
     contributions: [ 
       { 
@@ -47,7 +47,7 @@ export const WORKS: Work[] = [
         description: "I continued the improvement of IDEMIA’s customized <strong>Snipe-IT</strong> system by manually upgrading the core platform from <strong>v6.0.7</strong> to <strong>v8.1.2</strong>, resolving compatibility gaps along the way. My responsibilities included fixing bugs, implementing and refining new features, ensuring forward-compatible code, and integrating external services such as <strong>LDAP</strong> for authentication and <strong>MinIO</strong> for object storage. To maintain code quality and ensure its free of bugs, I also implemented <strong>PHPUnit</strong> test suites for reliable regression testing."
       },
       { 
-        title: "Devops & Automation Engineering",
+        title: "Devops Automation Engineering",
         description: "I applied a deployment pipeline by building and managing <strong>Docker</strong> and <strong>Docker Compose</strong> environments, creating production-ready images for <strong>NGINX</strong> (Webserver and Reverse Proxy), <strong>MinIO</strong> (S3 Object Storage) and <strong>Laravel</strong> (PHP FPM). I utilized <strong>Harbor</strong> as the private registry for image versioning and reuse. To eliminate manual deployment steps, I developed a <strong>Jenkins</strong> continuous deployment pipeline and <strong>Bash</strong> scripts that automates building, testing, versioning, pushing images, and deploying updates directly to both staging and production <strong>Linux</strong> servers via <strong>SSH</strong>, which improves deployment reliability and developer efficiency."
       },
     ],

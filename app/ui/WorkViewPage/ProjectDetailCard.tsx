@@ -54,8 +54,14 @@ export function ProjectDetailCard( {work, skills}: {work: Work, skills: Skill[]}
                   <div className="flex flex-row justify-between gap-8">
                     <dt className="text-foreground/60 mb-1">Role</dt>
                     <dd className="text-md text-right font-semibold text-pretty">
-                      {work.role.join(" — ")}
+                      {work.role.map((r, i) => (
+                        <span key={r}>
+                          {i+1}. {r}
+                          {i < work.role.length - 1 && <br />}
+                        </span>
+                      ))}
                     </dd>
+
                   </div>
                 )}
               </dl>
