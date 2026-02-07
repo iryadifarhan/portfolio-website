@@ -25,7 +25,7 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "farhan's website",
+  title: "iryadifarhan | Farhan Amanullah Iryadi",
   description:
     "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
   keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   applicationName: "Farhan Amanullah Iryadi Portfolio Website",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "farhan's website",
+    title: "iryadifarhan | Farhan Amanullah Iryadi",
     description:
       "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
     url: "/",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "farhan's website",
+    title: "iryadifarhan | Farhan Amanullah Iryadi",
     description:
       "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
   },
