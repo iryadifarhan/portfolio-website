@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   title: "iryadifarhan | Farhan Amanullah Iryadi",
   description:
     "Portfolio Website of Farhan Amanullah Iryadi (iryadifarhan).",
+  verification: {
+    google: "CrKIBZtjEiixsj3eu6ox6PaGc-oKQ9Kx0Mk_IfSA1M8",
+  },
   keywords: [
     "iryadifarhan",
     "iryadi",
