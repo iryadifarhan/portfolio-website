@@ -2,7 +2,6 @@ import "./globals.css";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import type { Metadata } from "next";
-import Script from "next/script";
 
 import Navbar from "./ui/Navbar";
 import Footer from "./ui/Footer";
@@ -22,6 +21,25 @@ const geistMono = Geist_Mono({
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://iryadifarhan.vercel.app";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Farhan Amanullah Iryadi",
+  alternateName: [
+    "Iryadifarhan",
+    "iryadifarhan",
+    "Iryadi",
+    "iryadi",
+    "Farhan Iryadi",
+  ],
+  url: siteUrl,
+  sameAs: [
+    "https://github.com/iryadifarhan",
+    "https://www.linkedin.com/in/iryadifarhan",
+  ],
+  jobTitle: "Software Engineer",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -79,27 +97,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable}`}
       >
-        <Script
-          id="ld-json-person"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Farhan Amanullah Iryadi",
-              alternateName: [
-                "Iryadifarhan",
-                "Iryadi",
-                "Farhan Iryadi",
-              ],
-              url: siteUrl,
-            }),
-          }}
-        />
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
           <AssetLoadGate>
             <main className="select-none font-sans flex flex-col items-center justify-items-center min-h-screen py-5 md:p-20 md:py-7">
