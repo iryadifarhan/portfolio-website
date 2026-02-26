@@ -8,7 +8,7 @@ export default function Info({blurb, motivation}: {blurb: string; motivation: st
         Info
     </div>
 
-    <p className="mt-2 text-foreground/80 leading-relaxed">{blurb}</p>
+    <p className="mt-2 text-foreground/80 leading-relaxed whitespace-pre-line">{blurb}</p>
     <p className="text-foreground/70 leading-relaxed font-semibold">{motivation}</p>
 </section>
   );
