@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <section className="w-full py-12 md:py-16 space-y-12 mt-10">
       <PageHeader title="About me" />
-      <Info blurb={PERSONAL_DATA.blurb} motivation={PERSONAL_DATA.motivation} />
+      <Info blurb={PERSONAL_DATA.blurb} hobbies={PERSONAL_DATA.hobbies} motivation={PERSONAL_DATA.motivation} />
       <Journey experience={EXPERIENCE} education={EDUCATION} />
       <SmallGallery gallery={GALLERY} />
     </section>
