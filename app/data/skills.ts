@@ -58,6 +58,7 @@ export const SKILLS: Skill[] = [
   { name: "XML",      src: "/tech/xml-logo.svg",      cat: "" },
   { name: "Marp",      src: "/tech/marp.svg",      cat: "" },
   { name: "MkDocs",      src: "/tech/mkdocs.png",      cat: "" },
+  { name: "Outline",      src: "/tech/outline-logo.svg",      cat: "" },
   { name: "Jira",      src: "/tech/jira-logo.svg",      cat: "" },
 ];
 
