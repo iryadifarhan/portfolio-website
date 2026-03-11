@@ -4,12 +4,19 @@ export type Experiences = {
     image: string;
     org: string;
     title: string;
-    detail: string;
+    detail?: string;
 };
 
 export const EXPERIENCE : Experiences[] = [
   {
-    period: "2025 - 2026",
+    period: "Apr 2026 - Present",
+    still_working: true,
+    image: "/about/allobank.webp",
+    org: "Allo Bank",
+    title: "Product Life Cycle Intern",
+  },
+  {
+    period: "Feb 2025 - Feb 2026",
     still_working: false,
     image: "/about/idemia.webp",
     org: "IDEMIA",
@@ -21,7 +28,7 @@ export const EXPERIENCE : Experiences[] = [
 
 export const EDUCATION: Experiences[] = [
   {
-    period: "2022 – Present",
+    period: "Sep 2022 – Present",
     image: "/about/binus.svg",
     org: "BINUS University",
     title: "Bachelor's Degree of Software Engineering",
@@ -29,7 +36,7 @@ export const EDUCATION: Experiences[] = [
       "Core Computer Science & Software Engineering fundamentals. Building a base knowledge in systems design, code structuring, product development, project management, automation testing, and its intersection with science (e.g. Physics, Biology).",
   },
   {
-    period: "2019 – 2022",
+    period: "Jul 2019 – Jun 2022",
     image: "/about/al-azhar.webp",
     org: "Al Azhar 4 Islamic Senior High School",
     title: "Natural Science Major",

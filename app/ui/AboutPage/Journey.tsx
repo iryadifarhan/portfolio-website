@@ -14,7 +14,9 @@ function TimelineItem(props: Experiences) {
         <div className="text">
           <div className="mt-0.5 font-medium">{props.org}</div>
           <div className="text-foreground/70 text-sm md:text-base">{props.title}</div>
-          <p className="mt-2 text-sm leading-relaxed text-foreground/90">{props.detail}</p>
+          {props.detail && (
+            <p className="mt-2 text-sm leading-relaxed text-foreground/90">{props.detail}</p>
+          )}
         </div>
       </div>
     </li>
