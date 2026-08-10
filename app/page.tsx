@@ -15,7 +15,7 @@ export default function Home() {
     <section className="flex flex-col items-center gap-4">
       <Hero name={PERSONAL_DATA.name} location={PERSONAL_DATA.location} quick_blurb={PERSONAL_DATA.quick_blurb} 
       recent_education_title={EDUCATION[0].title} recent_education_org={EDUCATION[0].org}
-      recent_experience_title={`${EXPERIENCE[0].still_working === false ? "Ex-" : ""}${EXPERIENCE[0].title}`} recent_experience_org={EXPERIENCE[0].org} />
+      experiences={EXPERIENCE}/>
       <Skills />
       <RecentWorks works={ WORKS }/>
       <QuickContact />

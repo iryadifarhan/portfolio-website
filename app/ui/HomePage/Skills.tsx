@@ -82,7 +82,7 @@ export default function Skills() {
             technologies, from low-level languages to modern web frameworks.
           </p>
           <p className="font-light text-foreground/50">
-            Use the filters to see the stacks I&apos;ve worked with!
+            Use the filters to see the tech stacks I&apos;ve worked with!
           </p>
         </div>
 

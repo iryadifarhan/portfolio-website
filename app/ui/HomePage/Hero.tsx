@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { GraduationCap, Briefcase, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { Experiences } from "../../data/experience";
 
-export default function Hero({name, location, quick_blurb, recent_education_title, recent_experience_title, recent_experience_org, recent_education_org}: 
-  {name: string; location: string; quick_blurb: string; recent_education_title: string; recent_experience_title: string, recent_experience_org: string, recent_education_org: string }) {
+export default function Hero({name, location, quick_blurb, recent_education_title, recent_education_org, experiences}: 
+  {name: string; location: string; quick_blurb: string; recent_education_title: string; recent_education_org: string; experiences: Experiences[] }) {
   return (
     <section
       id="hero"
@@ -57,10 +58,18 @@ export default function Hero({name, location, quick_blurb, recent_education_titl
               </p>
               
               {/* Career */}
-              <p className="text-sm md:text-md text-foreground/70 inline-flex items-center gap-2">
-              <Briefcase className="min-w-[1rem] size-4 opacity-70" aria-hidden />
-              <span>{recent_experience_title}, {recent_experience_org}</span>
-              </p>
+              {experiences.map((exp) => (
+                <p
+                  key={`${exp.org}-${exp.title}`}
+                  className="text-sm md:text-md text-foreground/70 inline-flex items-center gap-2"
+                >
+                  <Briefcase className="min-w-[1rem] size-4 opacity-70" aria-hidden />
+                  <span>
+                    {exp.still_working ? "" : "Ex "}
+                    {exp.title}, {exp.org}
+                  </span>
+                </p>
+              ))}
               
               {/* Location */}
               <p className="text-sm md:text-md text-foreground/70 inline-flex items-center gap-2">
