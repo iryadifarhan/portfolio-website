@@ -15,7 +15,7 @@ export const EXPERIENCE : Experiences[] = [
     org: "Allo Bank",
     title: "Product Life Cycle Intern",
     detail:
-      "Supporting the product lifecycle from launch preparation to post-release evaluation. Involved in Go-To-Market research, UAT test case development based on PRDs, and performance monitoring through data analysis using Metabase.",
+      "Support product development from launch preparation to post-release evaluation. Involved in Go-To-Market research, UAT test case development based on PRDs, and performance monitoring through data analysis using Metabase.",
   },
   {
     period: "Feb 2025 - Feb 2026",
@@ -24,7 +24,7 @@ export const EXPERIENCE : Experiences[] = [
     org: "IDEMIA",
     title: "Software Engineer Intern",
     detail:
-      "Developing and shipping internal IT Asset Management solutions from development to production. Built on Laravel and Snipe-IT, delivering stakeholder-driven enhancements while incorporating DevOps practices for deployment automation and operational efficiency.",
+      "Refined and refactored a legacy internal IT Asset Management System (built on OSS Snipe-IT), while implementing backlog features from ideation to production. Delivered stakeholder-driven enhancements and incorporated DevOps practices for deployment automation and operational efficiency.",
   },
 ];
 
