@@ -1,3 +1,4 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import { useMemo, useState, useCallback, useRef, useEffect } from "react";
 import { SKILLS, TABS, type Category } from "../../data/skills";
@@ -11,6 +12,7 @@ export default function Skills() {
   const [tab, setTab] = useState<Category>("languages");
   const [activeSkill, setActiveSkill] = useState<string | null>(null);
   const filtered = useMemo(() => SKILLS.filter((s) => s.cat === tab), [tab]);
+  const { resolvedTheme } = useTheme();
 
   // Arrow-key navigation for the tablist
   const tabRefs = useRef<Array<HTMLButtonElement | null>>([]);
@@ -176,7 +178,7 @@ export default function Skills() {
                     }
                   >
                     <Image
-                      src={s.src}
+                      src={s.darkSrc && resolvedTheme === "dark" ? s.darkSrc : s.src}
                       alt={s.name}
                       width={80}
                       height={80}

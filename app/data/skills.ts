@@ -5,6 +5,7 @@ export type Category = "languages" | "frameworks" | "devops" | "";
 export type Skill = {
   name: string;
   src: string;                 // path under /public
+  darkSrc?: string;            // path under /public (for dark mode)
   cat: Exclude<Category, "all">;
 };
 
@@ -30,12 +31,12 @@ export const SKILLS: Skill[] = [
   { name: "Selenium",    src: "/tech/selenium.svg",     cat: "frameworks" },
 
   // DevOps
-  { name: "GitLab",     src: "/tech/gitlab.svg",     cat: "devops" },
+  { name: "GitLab",     src: "/tech/gitlab.svg",     darkSrc: "/tech/gitlab-dark.svg",     cat: "devops" },
   { name: "Docker",     src: "/tech/docker.svg",     cat: "devops" },
   { name: "NGINX",      src: "/tech/nginx.svg",      cat: "devops" },
   { name: "MinIO",      src: "/tech/minio.svg",      cat: "devops" },
   { name: "Harbor",      src: "/tech/harbor.webp",      cat: "devops" },
-  { name: "Jenkins",      src: "/tech/jenkins.svg",      cat: "devops" },
+  { name: "Jenkins",      src: "/tech/jenkins.svg",   darkSrc: "/tech/jenkins-dark.svg",      cat: "devops" },
   
   // Logo
   { name: "GitLab",     src: "/tech/gitlab-logo.svg",     cat: "" },
