@@ -9,7 +9,7 @@ export type Experiences = {
 
 export const EXPERIENCE : Experiences[] = [
   {
-    period: "Apr 2026 - Present",
+    period: "Apr 2026 - Sep 2026",
     still_working: true,
     image: "/about/allobank.webp",
     org: "Allo Bank",
@@ -30,7 +30,7 @@ export const EXPERIENCE : Experiences[] = [
 
 export const EDUCATION: Experiences[] = [
   {
-    period: "Sep 2022 – Present",
+    period: "Sep 2022 – Aug 2026",
     image: "/about/binus.svg",
     org: "BINUS University",
     title: "Bachelor's Degree of Software Engineering",
