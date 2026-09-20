@@ -9,8 +9,16 @@ export type Experiences = {
 
 export const EXPERIENCE : Experiences[] = [
   {
-    period: "Apr 2026 - Sep 2026",
+    period: "Sep 2026 - Present",
     still_working: true,
+    image: "/about/indonesian-cloud.webp",
+    org: "Indonesian Cloud",
+    title: "Full Stack Developer",
+    // detail: "TBA",
+  },
+  {
+    period: "Apr 2026 - Sep 2026",
+    still_working: false,
     image: "/about/allobank.webp",
     org: "Allo Bank",
     title: "Product Life Cycle Intern",
